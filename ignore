@@ -1,0 +1,52 @@
+#!/bin/bash
+i=0
+while true
+do
+	if [[ $i = 0 ]]
+	then
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo "    (((  ((("
+		echo "     )))  )))"
+		echo "    (((  ((("
+		echo "  ______________"
+		echo "  \            /_"
+		echo "   \          /  |"
+		echo "    \        /---"
+		echo "   ------------"
+		echo ""
+		echo "      ENJOY!"
+		i=1
+	else
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo ""
+		echo "     )))  )))"
+		echo "    (((  ((("
+		echo "     )))  )))"
+		echo "  ______________"
+		echo "  \            /_"
+		echo "   \          /  |"
+		echo "    \        /---"
+		echo "   ------------"
+		echo ""
+		echo "      ENJOY!"
+		i=0
+	fi
+	sleep 1
+done
