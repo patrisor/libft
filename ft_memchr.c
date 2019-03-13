@@ -6,11 +6,11 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 20:54:09 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/09 16:36:06 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/03/13 13:59:52 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

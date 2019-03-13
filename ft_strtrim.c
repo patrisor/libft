@@ -6,11 +6,11 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/26 20:58:31 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/09 17:00:02 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/03/13 14:11:35 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 static	int	is_space(char c)
 {

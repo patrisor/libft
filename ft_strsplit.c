@@ -6,11 +6,11 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/26 20:50:38 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/09 16:59:14 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/03/13 14:10:41 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 static	int	get_str_len(char const *str, char c)
 {

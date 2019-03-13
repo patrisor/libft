@@ -6,11 +6,11 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/22 09:00:30 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/09 16:56:20 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/03/13 14:09:42 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 char	*ft_strnew(size_t size)
 {

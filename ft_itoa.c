@@ -6,11 +6,11 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/22 08:49:08 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/09 16:33:18 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/03/13 13:54:31 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 static size_t	get_str_len(int n)
 {
