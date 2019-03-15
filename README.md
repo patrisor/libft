@@ -8,12 +8,13 @@ of the program.
 ### How to use it
 The goal is to create a library called libft.a from 
 the source files so I can later use that library from 
-other projects at 42.
+other projects at 
+42.
 
-To create that library, after downloading/cloning this project, **cd** 
-into the project with your terminal, copy all the files 
-from the sub folders to the root directory and finally, 
-call make:
+To create that library, after downloading/cloning this project, 
+**cd** into the project with your terminal, copy all the files 
+from the sub folders to the root directory and 
+finally, call make:
 
 	git clone https://github.com/patrisor/libft.git
 	cd libft
