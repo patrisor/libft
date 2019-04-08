@@ -6,11 +6,11 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/26 14:06:28 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/13 14:05:12 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/03/09 16:51:21 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 char	*ft_strcpy(char *s1, const char *s2)
 {

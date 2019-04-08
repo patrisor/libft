@@ -6,11 +6,11 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/26 20:50:38 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/13 14:10:41 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/03/11 00:42:50 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "includes/libft.h"
 
 static	int	get_str_len(char const *str, char c)
 {
@@ -54,4 +54,26 @@ char		**ft_strsplit(char const *s, char c)
 	}
 	string[i] = 0;
 	return (string);
+}
+#include "stdio.h"
+int main (void)
+{
+	char *str = "\nabc\ndef\nrmq\nstr";
+
+	char **res = ft_strsplit(str,  '\n');
+	int i = 0;
+	char **traverse = res;
+	while (*traverse)
+	{
+		i++;
+		traverse++;
+	}
+	
+	for (res = ft_strsplit(str,  '\n'); *res != 0; res++)
+	{
+		printf("%s\n", *res);
+	}
+	
+	printf("%d", i);
+	return 0;
 }
