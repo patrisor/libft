@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_pow.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/22 08:30:59 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/09 16:30:56 by patrisor         ###   ########.fr       */
+/*   Created: 2019/04/17 22:20:14 by patrisor          #+#    #+#             */
+/*   Updated: 2019/04/17 23:08:29 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libft.h"
 
-int	ft_isalpha(int c)
+int			ft_pow(int x, int y)
 {
-	if (ft_islower(c) || ft_isupper(c))
+	int		result;
+
+	if (x < 0)
+		x *= -1;
+	if (y == 0)
 		return (1);
-	return (0);
+	if ((y < 0) || (x == 0))
+		return (0);
+	result = 1;
+	while (y--)
+		result *= x;
+	return (result);
 }

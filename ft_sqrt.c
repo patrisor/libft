@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/22 08:30:59 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/09 16:30:56 by patrisor         ###   ########.fr       */
+/*   Created: 2019/04/17 22:19:18 by patrisor          #+#    #+#             */
+/*   Updated: 2019/04/17 23:08:45 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libft.h"
 
-int	ft_isalpha(int c)
+double			ft_sqrt(double x)
 {
-	if (ft_islower(c) || ft_isupper(c))
-		return (1);
-	return (0);
+	double racine;
+	double sqrt;
+
+	racine = 1;
+	sqrt = 0;
+	while(racine <= x / 2)
+	{
+		sqrt = racine * racine;
+		if(sqrt == x)
+			return racine;
+		racine++;
+	}
+	return 0;
 }

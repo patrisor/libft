@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/23 13:20:29 by patrisor          #+#    #+#             */
-/*   Updated: 2019/04/08 15:24:22 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/04/29 01:43:52 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ char			*ft_strtrim(char const *s);
 int				ft_islower(int c);
 int				ft_isupper(int c);
 void			ft_swap(void *data1, void *data2, size_t size);
+void			ft_quicksort(int *array, int left, int right);
 
 typedef struct	s_list
 {
@@ -96,5 +97,21 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *n);
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+typedef unsigned char		t_bool;
+typedef unsigned char		t_char;
+
+typedef unsigned char		t_uint8;
+typedef unsigned short		t_uint16;
+typedef unsigned long		t_uint32;
+typedef unsigned long long	t_uint64;
+
+typedef signed char			t_int8;
+typedef signed short		t_int16;
+typedef signed long			t_int32;
+typedef signed long long	t_int64;
+
+int				ft_pow(int x, int y);
+double			ft_sqrt(double x);
 
 #endif
