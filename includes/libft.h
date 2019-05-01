@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/23 13:20:29 by patrisor          #+#    #+#             */
-/*   Updated: 2019/04/29 01:43:52 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/04/30 23:09:09 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 # define LIBFT_H
 # define BUFF_SIZE 42
 
-# include "fcntl.h"
-# include "unistd.h"
-# include "stdlib.h"
-# include "libft.h"
-# include "sys/types.h"
-# include "sys/uio.h"
+# include <fcntl.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <sys/types.h>
+# include <sys/uio.h>
 
 int				get_next_line(const int fd, char **line);
 int				ft_new_line(char **s, char **line, int fd, int bytes);
@@ -32,6 +31,7 @@ char			*ft_strncpy(char *dst, const char *src, size_t len);
 char			*ft_strchr(const char *s, int c);
 int				ft_strcmp(const char *s1, const char *s2);
 int				ft_isdigit(int c);
+int				ft_isOdd(int num);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 int				ft_atoi(const char *str);
@@ -98,20 +98,18 @@ void			ft_lstadd(t_list **alst, t_list *n);
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-typedef unsigned char		t_bool;
-typedef unsigned char		t_char;
-
 typedef unsigned char		t_uint8;
 typedef unsigned short		t_uint16;
-typedef unsigned long		t_uint32;
+typedef unsigned int		t_uint32;
 typedef unsigned long long	t_uint64;
 
 typedef signed char			t_int8;
 typedef signed short		t_int16;
-typedef signed long			t_int32;
+typedef signed int			t_int32;
 typedef signed long long	t_int64;
 
 int				ft_pow(int x, int y);
 double			ft_sqrt(double x);
+int				ft_add(int a, int b);
 
 #endif

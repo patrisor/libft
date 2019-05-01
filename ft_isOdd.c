@@ -1,38 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   qs.c                                               :+:      :+:    :+:   */
+/*   ft_isOdd.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/29 00:42:40 by patrisor          #+#    #+#             */
-/*   Updated: 2019/04/30 14:07:54 by patrisor         ###   ########.fr       */
+/*   Created: 2019/04/29 21:21:38 by patrisor          #+#    #+#             */
+/*   Updated: 2019/04/29 21:23:17 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_quicksort(int *array, int left, int right)
+int		ft_isOdd(int num)
 {
-	int		tmp;
+	int bool;
 
-	if(left >= right)
-		return;
-	int i = left;
-	int j = right;
-	int pivot = array[i];
-	while(1)
-	{
-		while(array[i] < pivot)
-			i++;
-		while(pivot < array[j])
-			j--;
-		if(i >= j)
-			break;
-		tmp = array[i];
-		array[i] = array[j]; 
-		array[j] = tmp;
-		i++; 
-		j--;
-	}
-	ft_quicksort(array, left, i - 1);
-	ft_quicksort(array, j + 1, right);
+	bool = 0; 
+	if(num&1)
+		bool = 1; 
+	return bool;
 }

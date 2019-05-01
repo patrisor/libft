@@ -6,7 +6,7 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/22 07:54:53 by patrisor          #+#    #+#              #
-#    Updated: 2019/04/29 01:43:19 by patrisor         ###   ########.fr        #
+#    Updated: 2019/04/29 22:37:59 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,11 +15,13 @@ CC = gcc
 FLAGS = -Werror -Wall -Wextra
 
 SRCS = ft_atoi.c \
+	   ft_add.c \
 	   ft_bzero.c \
 	   ft_countwords.c \
 	   ft_isalnum.c \
 	   ft_isalpha.c \
 	   ft_isdigit.c \
+	   ft_isOdd.c \
 	   ft_isupper.c \
 	   ft_islower.c \
 	   ft_isascii.c \
