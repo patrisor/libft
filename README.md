@@ -23,8 +23,11 @@ finally, call make:
 **NOTE**: You should see a *libft.a* file and some object files (.o).
 
 Call `make clean`: to clean up (removing the .o files from the root)
+
 Call `make fclean`: to remove the libft.a 
+
 Call `make re`: to recompile source files
+
 Call `make coffee`: if you are sleepy and need a pick-me-up!
 
 **Include** the header in your C project main file:
