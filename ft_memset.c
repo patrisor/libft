@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 21:45:10 by patrisor          #+#    #+#             */
-/*   Updated: 2019/04/30 23:02:17 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/06 15:45:00 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t	bytes;
 
-	if(b == NULL)
-		return NULL;
+	if (b == NULL)
+		return (NULL);
 	bytes = 0;
 	while (bytes < len)
 	{

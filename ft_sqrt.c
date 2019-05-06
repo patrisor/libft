@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/17 22:19:18 by patrisor          #+#    #+#             */
-/*   Updated: 2019/04/17 23:08:45 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/06 15:43:45 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ double			ft_sqrt(double x)
 
 	racine = 1;
 	sqrt = 0;
-	while(racine <= x / 2)
+	while (racine <= x / 2)
 	{
 		sqrt = racine * racine;
-		if(sqrt == x)
-			return racine;
+		if (sqrt == x)
+			return (racine);
 		racine++;
 	}
-	return 0;
+	return (0);
 }

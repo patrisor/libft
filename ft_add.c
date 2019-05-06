@@ -6,13 +6,13 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 22:21:06 by patrisor          #+#    #+#             */
-/*   Updated: 2019/04/29 22:36:54 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/06 15:45:35 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_add(int a, int b)
 {
-	if(b == 0)
-		return a;
-	return ft_add(a ^ b, (a & b) << 1);
+	if (b == 0)
+		return (a);
+	return (ft_add(a ^ b, (a & b) << 1));
 }

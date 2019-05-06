@@ -6,7 +6,7 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/22 07:54:53 by patrisor          #+#    #+#              #
-#    Updated: 2019/05/03 05:47:33 by patrisor         ###   ########.fr        #
+#    Updated: 2019/05/06 16:23:47 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS = ft_atoi.c \
 	   ft_isalnum.c \
 	   ft_isalpha.c \
 	   ft_isdigit.c \
-	   ft_isOdd.c \
+	   ft_isodd.c \
 	   ft_isupper.c \
 	   ft_islower.c \
 	   ft_isascii.c \
@@ -54,7 +54,6 @@ SRCS = ft_atoi.c \
 	   ft_putstr_fd.c \
 	   ft_putnbr.c \
 	   ft_putnbr_fd.c \
-	   ft_quicksort.c \
 	   ft_sqrt.c \
 	   ft_strcat.c \
 	   ft_strlen.c \

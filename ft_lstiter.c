@@ -6,19 +6,22 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/24 13:50:06 by patrisor          #+#    #+#             */
-/*   Updated: 2019/04/08 15:15:16 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:27:41 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
+	t_list	*ptr;
+
 	if (!lst)
 		return ;
-	while (lst->next)
+	ptr = lst;
+	while (ptr)
 	{
-		(*f)(lst->content);
-		lst = lst->next;
+		f(ptr);
+		ptr = ptr->next;
 	}
 }

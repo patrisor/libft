@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/25 21:35:58 by patrisor          #+#    #+#             */
-/*   Updated: 2019/03/11 00:02:29 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:29:18 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,18 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*srcc;
-	char	*dstc;
-	size_t	i;
+	size_t				i;
+	unsigned char		*ptr;
+	const unsigned char	*ptr2;
 
+	ptr = (unsigned char*)dst;
+	ptr2 = (unsigned char*)src;
 	i = 0;
-	srcc = (char *)src;
-	dstc = (char *)dst;
-	if (srcc < dstc)
-		while ((int)(--len) >= 0)
-			*(dstc + len) = *(srcc + len);
+	if (ptr2 < ptr)
+		while (++i <= len)
+			ptr[len - i] = ptr2[len - i];
 	else
-		while (i++ < len)
-			*(dstc + i) = *(srcc + i);
+		while (len-- > 0)
+			*(ptr++) = *(ptr2++);
 	return (dst);
-}
-
-#include <stdio.h>
-int main (void)
-{
-	int src[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-	char *dst = "12345678910";
-	printf("%p\n%p\n", dst, src);
-	printf("%p",ft_memmove(&dst, &src, 5));
-	return 0;
 }

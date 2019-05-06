@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 05:32:56 by patrisor          #+#    #+#             */
-/*   Updated: 2019/05/03 05:36:01 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/06 15:42:50 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_nmemset(void *b, int c, size_t len)
 	unsigned char	*cur;
 
 	cur = b;
-	while(len-- && cur)
+	while (len-- && cur)
 		*cur++ = (unsigned char)c;
-	return b;
+	return (b);
 }

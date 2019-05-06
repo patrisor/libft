@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/23 13:20:29 by patrisor          #+#    #+#             */
-/*   Updated: 2019/05/03 05:50:56 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/06 16:31:21 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char			*ft_strncpy(char *dst, const char *src, size_t len);
 char			*ft_strchr(const char *s, int c);
 int				ft_strcmp(const char *s1, const char *s2);
 int				ft_isdigit(int c);
-int				ft_isOdd(int num);
+int				ft_isodd(int num);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 int				ft_atoi(const char *str);
@@ -84,7 +84,6 @@ char			*ft_strtrim(char const *s);
 int				ft_islower(int c);
 int				ft_isupper(int c);
 void			ft_swap(void *data1, void *data2, size_t size);
-void			ft_quicksort(int *array, int left, int right);
 
 typedef struct	s_list
 {
@@ -97,7 +96,7 @@ t_list			*ft_lstnew(const void *content, size_t content_size);
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *n);
-void			ft_lstiter(t_list *lst, void (*f)(void *));
+void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int				ft_lstlen(t_list *head);
 
