@@ -1,36 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstat.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/29 22:37:01 by patrisor          #+#    #+#             */
-/*   Updated: 2019/05/09 09:37:48 by patrisor         ###   ########.fr       */
+/*   Created: 2019/05/09 09:38:38 by patrisor          #+#    #+#             */
+/*   Updated: 2019/05/09 09:39:18 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include  <stdio.h>
 #include "includes/libft.h"
 
-int		main(int argc, char **argv)
+t_list	*ft_lstat(t_list *lst, size_t val)
 {
-	int		value;
-	t_list	*new;
-	
-	if(argc != 2)
-		return -1;
-	// Create new list
-	// Generate random numbers and store into some list
-	int i = 0;
-	while(i < atoi(argv[1]))
+	size_t i;
+
+	i = 0;
+	while (i < val && lst != NULL)
 	{
-		value = rand() % atoi(argv[1]) + 1;
-		new = ft_lstnew((int *)value, sizeof(int));
-		new = new->next;
+		lst = lst->next;
 		i++;
 	}
-	// Display the list 
-	// Display the backward list
-	return 0;
+	return (lst);
 }

@@ -6,7 +6,7 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/22 07:54:53 by patrisor          #+#    #+#              #
-#    Updated: 2019/05/06 16:23:47 by patrisor         ###   ########.fr        #
+#    Updated: 2019/05/09 09:42:42 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,12 +30,14 @@ SRCS = ft_atoi.c \
 	   ft_strnew.c \
 	   ft_strinit.c \
 	   ft_lstadd.c \
+	   ft_lstat.c \
 	   ft_lstdel.c \
 	   ft_lstdelone.c \
 	   ft_lstiter.c \
 	   ft_lstmap.c \
 	   ft_lstnew.c \
 	   ft_lstlen.c \
+	   ft_lstrev.c \
 	   ft_memdel.c \
 	   ft_memalloc.c \
 	   ft_memccpy.c \
