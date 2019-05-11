@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 17:22:20 by patrisor          #+#    #+#             */
-/*   Updated: 2019/05/10 17:24:36 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/10 17:33:29 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_lstcount(t_list *lst)
 	size_t	i;
 
 	i = 0;
-	while(lst != NULL)
+	while (lst != NULL)
 	{
 		i++;
 		lst = lst->next;
