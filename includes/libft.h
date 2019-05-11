@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/23 13:20:29 by patrisor          #+#    #+#             */
-/*   Updated: 2019/05/09 09:41:08 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/10 17:25:48 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,7 @@ void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int				ft_lstlen(t_list *head);
 void			ft_lstrev(t_list **alst);
+size_t			ft_lstcount(t_list *lst);
 
 typedef unsigned char		t_uint8;
 typedef unsigned short		t_uint16;

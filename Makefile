@@ -6,7 +6,7 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/22 07:54:53 by patrisor          #+#    #+#              #
-#    Updated: 2019/05/09 09:42:42 by patrisor         ###   ########.fr        #
+#    Updated: 2019/05/10 17:25:20 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ SRCS = ft_atoi.c \
 	   ft_lstnew.c \
 	   ft_lstlen.c \
 	   ft_lstrev.c \
+	   ft_lstcount.c \
 	   ft_memdel.c \
 	   ft_memalloc.c \
 	   ft_memccpy.c \
