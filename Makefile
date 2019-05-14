@@ -6,7 +6,7 @@
 #    By: patrisor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/22 07:54:53 by patrisor          #+#    #+#              #
-#    Updated: 2019/05/10 19:06:32 by patrisor         ###   ########.fr        #
+#    Updated: 2019/05/13 23:01:25 by patrisor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,6 +85,7 @@ SRCS = ft_atoi.c \
 	   ft_strstr.c \
 	   ft_strsub.c \
 	   ft_strtrim.c \
+	   ft_splitdel.c \
 	   ft_tolower.c \
 	   ft_toupper.c \
 	   ft_swap.c \

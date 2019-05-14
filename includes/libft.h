@@ -6,7 +6,7 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/23 13:20:29 by patrisor          #+#    #+#             */
-/*   Updated: 2019/05/10 18:59:28 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/13 23:00:49 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ int				ft_strnequ(char const *s1, char const *s2, size_t n);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s);
+int				ft_splitdel(char ***split);
 int				ft_islower(int c);
 int				ft_isupper(int c);
 void			ft_swap(void *data1, void *data2, size_t size);
