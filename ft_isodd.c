@@ -6,16 +6,16 @@
 /*   By: patrisor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 21:21:38 by patrisor          #+#    #+#             */
-/*   Updated: 2019/05/09 09:52:51 by patrisor         ###   ########.fr       */
+/*   Updated: 2019/05/31 03:40:44 by patrisor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_isodd(int num)
 {
-	int bool;
+	int		boolean;
 
-	bool = 0; 
-	if(num&1)
-		bool = 1; 
-	return bool;
+	boolean = 0;
+	if (num & 1)
+		boolean = 1;
+	return (boolean);
 }
